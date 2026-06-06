@@ -30,11 +30,6 @@ body {
   navigation: auto;
 }
 
-::view-transition-group(*) {
-  animation-duration: 0.15s;
-}
-
-
 
 body {
   margin: 0;
@@ -97,6 +92,10 @@ h1,
 h2,
 h3 {
   margin-top: 0;
+  font-family: 'Satoshi-Bold', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 .hero {
@@ -106,6 +105,10 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+}
+
+.hero-text {
+  max-width: 800px;
 }
 
 .cards {
