@@ -1,17 +1,50 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('/fonts/Satoshi-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  line-height: 1.5;
-  color: #222;
+  font-family: 'Satoshi', sans-serif;
 }
 
-img {
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(*) {
+  animation-duration: 0.15s;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: 'Satoshi', sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background-color: var(--white);
+}
+
+img, picture, video, canvas, svg {
   max-width: 100%;
   height: auto;
   display: block;
@@ -39,12 +72,21 @@ nav a {
   text-decoration: none;
 }
 
+nav {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 nav a:hover {
   text-decoration: underline;
+  animation: underline 0.15s ease-in-out;
 }
 
 section {
   padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section + section {
@@ -59,6 +101,11 @@ h3 {
 
 .hero {
   padding: 3rem 0;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 .cards {
