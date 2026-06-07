@@ -51,11 +51,6 @@
 .white {
   color: var(--white);
 }
-
-body {
-  font-family: 'Satoshi', sans-serif;
-}
-
 @view-transition {
   navigation: auto;
 }
@@ -65,8 +60,8 @@ body {
   margin: 0;
   font-family: 'Satoshi', sans-serif;
   line-height: 1.5;
-  color: #222;
-  background-color: var(--white);
+
+
 }
 
 img, picture, video, canvas, svg {
@@ -79,10 +74,15 @@ a {
   color: inherit;
 }
 
-header,
-main,
-footer {
-  padding: 1rem 2rem;
+header {
+  backdrop-filter: blur(10px);
+  background-color: rgba(248, 248, 248, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ddd;
 }
 
 nav ul {
@@ -100,8 +100,8 @@ nav {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  border-bottom: 1px solid #ddd;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+
 }
 
 nav a {
@@ -159,6 +159,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  
+  
 }
 
 .hero-text {
