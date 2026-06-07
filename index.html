@@ -30,13 +30,26 @@
   <body>
     <header>
       <nav aria-label="Main">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="contact.html" class="btn">Get Started</a>
+        <button
+          type="button"
+          class="nav-toggle-btn"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div id="nav-menu" class="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn">Get Started</a>
+        </div>
       </nav>
     </header>
 
@@ -124,5 +137,6 @@
         </address>
       </div>
     </footer>
+    <script src="nav.js"></script>
   </body>
 </html>
