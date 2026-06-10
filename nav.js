@@ -12,7 +12,7 @@ if (nav) {
     setOpen(!nav.classList.contains('nav-open'));
   });
 
-  menu.querySelectorAll('a').forEach((link) => {
+  nav.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => setOpen(false));
   });
 
@@ -20,7 +20,7 @@ if (nav) {
     if (e.key === 'Escape') setOpen(false);
   });
 
-  window.matchMedia('(min-width: 769px)').addEventListener('change', (e) => {
+  window.matchMedia('(min-width: 901px)').addEventListener('change', (e) => {
     if (e.matches) setOpen(false);
   });
 }
