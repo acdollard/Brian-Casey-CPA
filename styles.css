@@ -450,7 +450,7 @@ button[type="submit"]:focus-visible {
 }
 
 .hero-home {
-  height: 62vh;
+  min-height: 62vh;
   padding: 5rem 4rem;
   border-radius: 0;
 }
