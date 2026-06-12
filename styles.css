@@ -157,7 +157,7 @@ header nav {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 0rem;
 }
 
 header nav .nav-logo {
