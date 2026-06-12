@@ -587,12 +587,11 @@ main.home .image-text img {
   width: 80%;
   border-radius: 24px;
   box-shadow: 0 8px 24px rgba(8, 44, 96, 0.1);
+
 }
 
 .contact-form {
-  background-color: #f8f8f8;
   padding: 1.25rem 1.5rem;
-  border-radius: 16px;
 }
 
 .contact-form p {
@@ -723,6 +722,10 @@ main.home .image-text img {
 
   .image-text {
     grid-template-columns: 1fr;
+  }
+
+  main.home .image-text img {
+    margin: 0 auto;
   }
 }
 
