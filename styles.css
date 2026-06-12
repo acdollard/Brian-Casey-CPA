@@ -733,6 +733,10 @@ main.home .image-text img {
   main.home .image-text img {
     margin: 0 auto;
   }
+
+  .hero-home::after {
+    transform: translate(-50%, 15%);
+  }
 }
 
 .cta {
