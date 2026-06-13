@@ -450,10 +450,10 @@ button[type="submit"]:focus-visible {
 }
 
 .hero-home {
-  height: 62vh;
-  padding: 5rem 4rem;
+  min-height: 62vh;
+  padding: 5rem 4rem 6rem;
   border-radius: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero::after,
