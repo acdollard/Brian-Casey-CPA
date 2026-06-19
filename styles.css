@@ -698,7 +698,7 @@ main.home .image-text img {
   }
 
   .hero-home::after {
-    width: min(640px, 130vw);
+    width: min(640px, 100vw);
     opacity: 0.1;
     transform: translate(-50%, 45%);
   }
